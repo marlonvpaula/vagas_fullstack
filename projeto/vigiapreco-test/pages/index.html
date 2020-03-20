@@ -1,0 +1,334 @@
+<v-content>
+  
+  <section id="home" class="pl-12 pr-12">
+    <div class="py-12"></div>
+
+    <v-row>
+      <v-col cols="12" md="6" class="py-12">
+
+        <h2 class="display-2 font-weight-bold mb-3 py-12">Titulo da Página</h2>
+        
+        <v-responsive
+          class="mx-auto title font-weight-light mb-8"
+          max-width="720"
+        >
+          Informação Curta e direta sobre o app divulgado na página com foco nas funcionalidades
+        </v-responsive>
+        
+        <v-row>
+          <v-col cols="6">
+            <v-img src="/google-play.png"  max-height="70"  
+            contain ></v-img>
+          </v-col>
+          <v-col cols="6">
+            <v-img src="/download-on-the-app-store-badge-ptbr-rgb-blk-092917_2.png"  max-height="70"  
+            contain  ></v-img>
+          </v-col>
+          </v-row>
+      </v-col>
+      <v-col cols="12" md="6">
+        <v-img src="/group-9.png" ></v-img>
+      </v-col>
+    </v-row>
+
+    <div class="py-12"></div>
+  </section>
+  <section
+    id="features"
+    class="grey lighten-3"
+  >
+    <div class="py-12"></div>
+
+    <v-container class="text-center">
+      <v-row>
+        <v-col
+          v-for="({ icon, title, text }, i) in features"
+          :key="i"
+          cols="12"
+          md="4"
+        >
+          <v-card
+            class="py-12 px-4"
+            color="grey lighten-5"
+            flat
+          >
+            <v-theme-provider dark>
+              <div>
+                <img
+                  :src="icon"
+                  class="mr-2"
+                >
+              </div>
+            </v-theme-provider>
+
+            <v-card-title
+              class="justify-center font-weight-black text-uppercase"
+              v-text="title"
+            ></v-card-title>
+
+            <v-card-text
+              class="subtitle-1"
+              v-text="text"
+            >
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+
+    <div class="py-12"></div>
+  </section>
+
+  <section id="video">
+    <div class="py-12"></div>
+
+    <v-container class="text-center">
+      <h2 class="display-1 font-weight-bold mb-3 ">Video Promocional do app</h2>
+
+      <v-responsive
+        class="mx-auto subtitle-1 font-weight-light mb-8"
+        max-width="720"
+      >
+        O video mostra todas as funcionalidades e você vai conferir como funciona e ver como é facil e simples de usar o app, falando do uso e seus benefícios
+      </v-responsive>
+
+      <iframe width="80%" height="400" src="https://www.youtube.com/embed/OrxmtDw4pVI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </v-container>
+
+    <div class="py-12"></div>
+  </section>
+
+  <section id="marcas">
+    <div class="py-2"></div>
+
+    <v-container >
+      <h2 class="display-1 font-weight-bold mb-3 text-center">Marcas do app em destaque</h2>
+      <div class="py-6"></div>
+      <v-row>
+        <v-col cols="12" md="6">
+          <h3 class="headline font-weight-bold mb-0">Título</h3>
+          <div class="py-2"></div>
+          <div> Marcação de texto para ser preenchido depois da página ficar pronta, enquanto isso segue como o texto marcando a página. </div>
+          <div class="py-6"></div>
+          <h3 class="headline font-weight-bold mb-0">Título</h3>
+          <div class="py-2"></div>
+          <div> Marcação de texto para ser preenchido depois da página ficar pronta, enquanto isso segue como o texto marcando a página. </div>
+          <div class="py-6"></div>
+          <h3 class="headline font-weight-bold mb-0">Título</h3>
+          <div class="py-2"></div>
+          <div> Marcação de texto para ser preenchido depois da página ficar pronta, enquanto isso segue como o texto marcando a página. </div>
+        </v-col>
+        <v-col cols="12" md="6">
+          <v-row>
+            <v-col
+              v-for="({ icon, color }, i) in marcas"
+              :key="i"
+              cols="4"
+              md="3"
+            >
+              <v-card
+                class="py-2 px-3 text-center"
+                :color="color"
+              >
+                <img
+                  :src="icon"
+                  height="60"
+                  width="60"
+                >
+              </v-card>
+            </v-col>
+          </v-row>
+        </v-col>
+      </v-row>
+    </v-container>
+
+    <div class="py-12"></div>
+  </section>
+
+
+  <section id="app" class="pl-12 pr-12">
+    <div class="py-12"></div>
+
+    <v-row>
+      
+      <v-col cols="12" md="6">
+        <v-img src="/group-9.png"></v-img>
+      </v-col>
+      <v-col cols="12" md="6" class="py-12">
+
+        <h2 class="display-2 font-weight-bold mb-3 py-12">Titulo da Página</h2>
+
+        <v-responsive
+          class="mx-auto title font-weight-light mb-8"
+          max-width="720"
+        >
+          Informação Curta e direta sobre o app divulgado na página com foco nas funcionalidades
+        </v-responsive>
+        
+        <v-row>
+          <v-col cols="6">
+            <v-img src="/google-play.png"  max-height="70" 
+            contain  ></v-img>
+          </v-col>
+          <v-col cols="6">
+            <v-img src="/download-on-the-app-store-badge-ptbr-rgb-blk-092917_2.png"  max-height="70"  
+            contain ></v-img>
+          </v-col>
+        </v-row>
+      </v-col>
+    </v-row>
+
+    <div class="py-12"></div>
+  </section>
+  
+  <section
+    id="items"
+    class="grey lighten-3"
+  >
+    <VueSlickCarousel v-bind="settings" style="margin: 20px;" class="ml-6">
+      <v-card
+        class="my-6 ml-6 py-12  text-center"
+        color="grey lighten-5"
+        v-for="(item, i) in items"
+        :key="i"
+      >
+        <div class="cnt-badget-percantage" > 
+          <div class="baget-percentage" :style="getColor(item.percentage)">
+            <v-icon v-show="item.percentage <= 0" dark>arrow_drop_down</v-icon>
+            <v-icon v-show="item.percentage > 10" dark>arrow_drop_up</v-icon>
+            <v-icon v-show="item.percentage > 0 && item.percentage < 5" dark>arrow_drop_up</v-icon>
+            <v-icon v-show="item.percentage > 5 && item.percentage < 10" >arrow_drop_up</v-icon>
+            {{ item.percentage }}%
+          </div>
+        </div>
+        <img
+          :src="item.image"
+          height="100"
+          width="180"
+          class="image-product"
+        >
+
+        <v-card-title
+          class="justify-center subtitle-1"
+          v-text="item.title"
+        ></v-card-title>
+
+        <h5>Vendido por: <span class="text-store">{{item&&item.storeid?item.storeid.name:''}}</span></h5>
+         <span class="text-price">R$ {{item.price}}</span>
+      </v-card>
+    </VueSlickCarousel>
+    
+    <div class="py-12"></div>
+  </section>
+  
+  <section
+    id="extensoes"
+    class="justify-center"
+    style="background-color: #c4ee30"
+  >
+    <v-container>
+      <v-row>
+          <v-col md="5" cols="12" class="hidden-xs-only">
+            <v-row>
+              <v-col cols="2">
+                <div class="py-1"></div>
+                <v-img src="/chrome.png" class="mr-4" max-height="30" max-width="30" contain ></v-img> 
+              </v-col> 
+              <v-col cols="10">
+                <v-row><strong>Instale a extensão no seu Google Chrome.</strong></v-row>
+                <v-row>Texte de suporte do titulo </v-row>
+              </v-col>
+            </v-row>
+          </v-col>
+          <v-col md="4" cols="12">
+            <v-row>
+              <v-col cols="12">
+                <div> <strong>Baixe nosso app.</strong> e não fique de fora do que acontece no produto. </div>
+              </v-col>
+            </v-row> 
+          </v-col>
+          <v-col md="3" cols="12">
+            <v-row>
+              <v-col cols="6">
+                <v-img src="/google-play.png"  max-height="70" 
+                contain  ></v-img>
+              </v-col>
+              <v-col cols="6">
+                <v-img src="/download-on-the-app-store-badge-ptbr-rgb-blk-092917_2.png"  max-height="70"  
+                contain ></v-img>
+              </v-col>
+            </v-row>
+          </v-col>
+      </v-row>
+    </v-container>
+  </section>
+
+  
+  <v-footer
+    class="justify-center"
+    color="#6c8a00"
+    style="color: white"
+  >
+    <v-container>
+      <v-row>
+        <v-col md="3" cols="12">
+          <h3 class="headline font-weight-bold mb-0">Sobre</h3>
+          <div class="py-2"></div>
+          <div> Quem somos </div>
+          <div> Imprensa </div>
+          <div> Trabalhe conosco </div>
+          <div> Politica de Privacidade </div>
+        </v-col>
+        <v-col md="3" cols="12">
+          <h3 class="headline font-weight-bold mb-0">Detalhes</h3>
+          <div class="py-2"></div>
+          <div> Black Friday </div>
+          <div> Black Night </div>
+          <div> Dias dos Pais </div>
+          <div> Dias dos Namorados </div>
+        </v-col>
+        <v-col md="3" cols="12">
+          <h3 class="headline font-weight-bold mb-0">Contato</h3>
+          <div class="py-2"></div>
+          <div> Fale Conosco </div>
+          <div> Midia Kit / Parceria </div>
+          <div> Dúvidas Frequentes </div>
+        </v-col>
+        <v-col md="3" cols="12">
+          <h3 class="headline font-weight-bold mb-0">Contato</h3>
+          <div class="py-2"></div>
+          <v-row>
+            <v-col cols="3">
+              <v-img src="/path.png" max-height="50"
+              contain ></v-img>
+            </v-col>
+            <v-col cols="3">
+              <v-img src="/path_2.png" max-height="50"
+              contain ></v-img>
+            </v-col>
+            <v-col cols="3">
+              <v-img src="/combined-shape.png" max-height="50"
+              contain ></v-img>
+            </v-col>
+            <v-col cols="3">
+              <v-img src="/shape.png" max-height="50" 
+              contain ></v-img>
+            </v-col>
+          </v-row>
+        </v-col>
+      </v-row>
+      
+      <v-row>
+        <v-col cols="12">
+          <div> Lojas: Adidas, Americanas, Apple, Azul, Baby, Bebê Store, Beleza na Web, Camisaria Colombo, Carrefor, 
+                Casas Bahia, Centauro, Cipela, Cissa Magazine, Dafiti, Decathion, Dell, efácil, Época Cosméticos, Extra, 
+                Fast Shop, Fnac, Girafa, Insinuante, Kabum, Kanui, Lenovo, Livraria Saraiva, Magazine Luiza, Marisa, MegaMamute,
+                Mobly, Netshoes, Nike, Ponto Frio, Posthaus, Ricardo Eletro, Sépha Perfumaria, Sephora, Shopfato, Shoptime, Sony,
+                Sou barato, Submarino, Submarino Viagens, Super Mufatto. <strong> Se sua marca não está na lista, entre em contato com a nossa equipe</strong>  </div>
+        </v-col>
+      </v-row>
+
+    </v-container>
+    
+  </v-footer>
+</v-content>

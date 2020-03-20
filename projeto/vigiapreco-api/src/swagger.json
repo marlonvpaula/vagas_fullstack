@@ -1,0 +1,45 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "cobranca API",
+        "description": "A simple API to learn how to write Specification"
+    },
+    "schemes": [
+        "http"
+    ],
+    "host": "",
+    "basePath": "/",
+    "paths": {
+        "/users/getall": {
+            "get": {
+                "summary": "Gets some users",
+                "description": "Returns a list containing all users.",
+                "responses": {
+                    "200": {
+                        "description": "A list of Users",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "properties": {
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "username": {
+                                        "type": "string"
+                                    },
+                                    "grand": {
+                                        "type": "string"
+                                    },
+                                    "acesso": {
+                                        "type": "string"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
